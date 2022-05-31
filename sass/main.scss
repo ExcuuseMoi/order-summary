@@ -1,0 +1,149 @@
+@import './colors';
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	background-image: url(../images/pattern-background-mobile.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: 'Red Hat Display', sans-serif;
+}
+main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0 2em;
+	width: 100vw;
+	height: 100vh;
+}
+.card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	min-width: 280px;
+	max-width: 400px;
+	background-color: $pure-white;
+	border-radius: 20px;
+	overflow: hidden;
+	&__img {
+		width: 100%;
+	}
+	&__mid-content {
+		text-align: center;
+		h1 {
+			color: $dark-blue;
+			margin-block-start: 2em;
+			margin-block-end: 1em;
+			font-size: 2em;
+			font-weight: 900;
+		}
+		p {
+			font-size: 1.5em;
+			line-height: 1.6;
+			padding: 0 1.1em;
+			color: $desaturated-blue;
+		}
+	}
+	&__panel {
+		display: flex;
+		width: 90%;
+		margin: 1.8em 0;
+		padding: 1.2em 0;
+		background-color: $very-pale-blue;
+		border-radius: 8px;
+		&-img {
+			display: flex;
+			align-items: center;
+			padding: 0 1em;
+		}
+		&-content {
+			display: flex;
+			justify-content: space-between;
+			width: 100%;
+			&--mid {
+				display: flex;
+				flex-direction: column;
+				padding-left: 0.7em;
+				h2 {
+					padding-top: 0.3em;
+					font-weight: 900;
+					color: $dark-blue;
+				}
+				p {
+					padding-top: 0.2em;
+					font-size: 1.3rem;
+					font-weight: 700;
+					color: $desaturated-blue;
+				}
+			}
+
+			&--right {
+				display: flex;
+				align-items: center;
+				padding-right: 1em;
+				font-size: 1.2em;
+				font-weight: 900;
+
+				a {
+					color: $bright-blue;
+					&:hover {
+						text-decoration: none;
+					}
+				}
+			}
+		}
+	}
+	button {
+		width: 90%;
+		color: $pure-white;
+		padding: 1em 0;
+		margin-top: 0.6em;
+		font-weight: 900;
+		border-radius: 8px;
+		background-color: $bright-blue;
+		border: none;
+		cursor: pointer;
+		transition: background-color 0.3s;
+		&:hover {
+			background-color: $pale-violet;
+		}
+	}
+	&__cancel-order {
+		padding: 2.2em 0 3em 0;
+		a {
+			font-size: 1.5rem;
+			font-weight: 900;
+			text-decoration: none;
+			color: $desaturated-blue;
+			transition: color 0.3s;
+			&:hover {
+				color: $dark-blue;
+			}
+		}
+	}
+}
+
+@media (min-width: 440px) {
+	.card {
+		&__mid-content {
+			h1 {
+				font-size: 2.5em;
+			}
+			p {
+				font-size: 1.8em;
+			}
+		}
+	}
+}
+@media (min-width: 1400px) {
+	body {
+		background-image: url(../images/pattern-background-desktop.svg);
+	}
+}

@@ -1,0 +1,202 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-image: url(../images/pattern-background-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 2em;
+  width: 100vw;
+  height: 100vh;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 280px;
+  max-width: 400px;
+  background-color: white;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.card__img {
+  width: 100%;
+}
+
+.card__mid-content {
+  text-align: center;
+}
+
+.card__mid-content h1 {
+  color: #1f2f56;
+  -webkit-margin-before: 2em;
+          margin-block-start: 2em;
+  -webkit-margin-after: 1em;
+          margin-block-end: 1em;
+  font-size: 2em;
+  font-weight: 900;
+}
+
+.card__mid-content p {
+  font-size: 1.5em;
+  line-height: 1.6;
+  padding: 0 1.1em;
+  color: #7280a7;
+}
+
+.card__panel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  margin: 1.8em 0;
+  padding: 1.2em 0;
+  background-color: #f5f7ff;
+  border-radius: 8px;
+}
+
+.card__panel-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 1em;
+}
+
+.card__panel-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.card__panel-content--mid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 0.7em;
+}
+
+.card__panel-content--mid h2 {
+  padding-top: 0.3em;
+  font-weight: 900;
+  color: #1f2f56;
+}
+
+.card__panel-content--mid p {
+  padding-top: 0.2em;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #7280a7;
+}
+
+.card__panel-content--right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 1em;
+  font-size: 1.2em;
+  font-weight: 900;
+}
+
+.card__panel-content--right a {
+  color: #3829e0;
+}
+
+.card__panel-content--right a:hover {
+  text-decoration: none;
+}
+
+.card button {
+  width: 90%;
+  color: white;
+  padding: 1em 0;
+  margin-top: 0.6em;
+  font-weight: 900;
+  font-family: 'Red Hat Display', sans-serif;
+  border-radius: 8px;
+  background-color: #3829e0;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+
+.card button:hover {
+  background-color: #857cde;
+}
+
+.card__cancel-order {
+  padding: 2.2em 0 3em 0;
+}
+
+.card__cancel-order a {
+  font-size: 1.5rem;
+  font-weight: 900;
+  text-decoration: none;
+  color: #7280a7;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+.card__cancel-order a:hover {
+  color: #1f2f56;
+}
+
+@media (min-width: 440px) {
+  .card__mid-content h1 {
+    font-size: 2.5em;
+  }
+  .card__mid-content p {
+    font-size: 1.8em;
+  }
+}
+
+@media (min-width: 1400px) {
+  body {
+    background-image: url(../images/pattern-background-desktop.svg);
+  }
+}
+/*# sourceMappingURL=main.css.map */
